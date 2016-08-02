@@ -44,15 +44,20 @@ public class MainActivity extends AppCompatActivity {
     private void displayMessage(String priceMessage) {
         TextView summary = (TextView) findViewById(R.id.summaryOrder);
         summary.setText(priceMessage);
+        summary.setVisibility(View.VISIBLE);
     }
 
     private String createOrderSummary(int price) {
         CheckBox whippredCrem = (CheckBox) findViewById(R.id.whipped_crem);
+        CheckBox chocolate = (CheckBox) findViewById(R.id.chocolate);
+        TextView name = (TextView) findViewById(R.id.name);
         String summaryText = "";
 
-        summaryText += "Name: Lyla the Labirinth \\nQuantity: " + quantity;
+        summaryText += "Name: " + name.getText();
+        summaryText += "\nQuantity: " + quantity;
         summaryText += "\nTotal: " + price;
         summaryText += "\nAdd Whipped cream ? " + whippredCrem.isChecked();
+        summaryText += "\nAdd  chocolate ? " + chocolate.isChecked();
         summaryText += "\nThank you!";
 
         return summaryText;
