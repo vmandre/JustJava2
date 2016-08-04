@@ -19,7 +19,7 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="@string/hint"
             android:inputType="textCapWords"/>
 
         <TextView
@@ -27,30 +27,30 @@
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"
             android:paddingTop="16dp"
-            android:text="toppings"
+            android:text="@string/toppings"
             android:textAllCaps="true"
             android:textSize="16sp" />
 
         <CheckBox
-            android:id="@+id/whipped_crem"
+            android:id="@+id/whipped_cream"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="Whipped cream" />
+            android:text="@string/whipped_crem" />
 
         <CheckBox
             android:id="@+id/chocolate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="Chocolate" />
+            android:text="@string/chocolate" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"
             android:paddingTop="16dp"
-            android:text="quantity"
+            android:text="@string/quantity"
             android:textAllCaps="true" />
 
 
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="22dp"
             android:paddingTop="16dp"
-            android:text="order summary"
+            android:text="@string/order_summary"
             android:textAllCaps="true" />
 
         <TextView
@@ -109,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="submitOrder"
-            android:text="order"
+            android:text="@string/order"
             android:textAllCaps="true" />
     </LinearLayout>
 </ScrollView>
