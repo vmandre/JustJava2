@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         TextView name = (TextView) findViewById(R.id.name);
         String summaryText = "";
 
-        summaryText += getString(R.string.hint, name.getText()); //  + ": " + name.getText();
+        summaryText += ": " + name.getText(); //getString(R.string.hint, name.getText()); //  + ": " + name.getText();
         summaryText += "\n" + getString(R.string.quantity) + ": " + quantity;
         summaryText += "\n" + getString(R.string.total) + ": " + NumberFormat.getCurrencyInstance().format(price);
         summaryText += "\n" + getString(R.string.add_whipped_cream) + " " + whippredCream.isChecked();
